@@ -25,10 +25,10 @@ ECHO Installation de GitHub sur la machine...
 github.exe /silent
 ECHO.
 
+CD ..
 curl https://raw.githubusercontent.com/ETML-Midicix/auto-program-installor/main/tools/setupVscAddons.bat -o setupVscAddons.bat -s
 setupVscAddons.bat
 
 ECHO Delete all installer files
 del %userprofile%\downloads\softwares\* /q
-cd ..
 rmdir %userprofile%\downloads\softwares
