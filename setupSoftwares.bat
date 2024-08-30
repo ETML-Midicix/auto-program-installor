@@ -26,8 +26,10 @@ github.exe /silent
 ECHO.
 
 CD ..
-curl https://raw.githubusercontent.com/ETML-Midicix/auto-program-installor/main/tools/setupVscAddons.bat -o setupVscAddons.bat -s
+ECHO Installation de l'installeur d'extension Visual Studio Code...
+curl https://raw.githubusercontent.com/ETML-Midicix/auto-program-installor/main/tools/setupVscAddons.bat -o setupVscAddons.bat -#
 setupVscAddons.bat
+ECHO.
 
 ECHO Delete all installer files
 del %userprofile%\downloads\softwares\* /q
